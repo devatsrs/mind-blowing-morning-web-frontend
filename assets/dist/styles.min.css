@@ -160,13 +160,14 @@ footer #footer-outer-grid .logo .wrapper .tagline {
 }
 footer #footer-outer-grid .nav-links {
   height: 10px;
-  flex-basis: 50%;
+  flex-basis: 70%;
   display: flex;
   padding: 0px 0px 0px 0px;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
   footer #footer-outer-grid .nav-links {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 footer #footer-outer-grid .nav-links ul {
