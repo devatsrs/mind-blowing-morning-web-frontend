@@ -92,6 +92,11 @@ footer {
   position: absolute;
   bottom: 0;
 }
+@media only screen and (max-width: 1324px) {
+  footer {
+    position: relative;
+  }
+}
 footer #footer-copyright {
   margin: 0 auto;
   display: flex;
@@ -120,6 +125,13 @@ footer #footer-outer-grid {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 1324px) {
+  footer #footer-outer-grid {
+    flex-direction: column;
+    width: auto;
+    padding: 30px;
+  }
+}
 footer #footer-outer-grid .column {
   flex-basis: 100%;
   min-height: 200px;
@@ -143,8 +155,7 @@ footer #footer-outer-grid .logo .wrapper .tagline {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.200000003px;
-  text-align: left;
-  width: 400px;
+  width: 95%;
   color: #5c5c5c;
 }
 footer #footer-outer-grid .nav-links {
@@ -152,6 +163,11 @@ footer #footer-outer-grid .nav-links {
   flex-basis: 50%;
   display: flex;
   padding: 0px 0px 0px 0px;
+}
+@media only screen and (max-width: 550px) {
+  footer #footer-outer-grid .nav-links {
+    flex-direction: column;
+  }
 }
 footer #footer-outer-grid .nav-links ul {
   list-style: none;
@@ -166,7 +182,6 @@ footer #footer-outer-grid .nav-links h4 {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0px;
-  text-align: left;
   margin: 0;
   margin-bottom: 10px;
   color: #3c3c3c;
@@ -177,7 +192,6 @@ footer #footer-outer-grid .nav-links a {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0px;
-  text-align: left;
   text-decoration: none;
   color: #3c3c3c;
 }
@@ -198,7 +212,6 @@ footer #footer-outer-grid .social-media h4 {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0px;
-  text-align: left;
   margin: 0;
   margin-bottom: 10px;
   color: #3c3c3c;
@@ -206,6 +219,9 @@ footer #footer-outer-grid .social-media h4 {
 footer #footer-outer-grid .social-media .form {
   width: 100%;
   margin: 20px 0;
+}
+footer #footer-outer-grid .social-media .form form {
+  display: flex;
 }
 footer #footer-outer-grid .social-media .form form input[type=email] {
   width: 200px;
@@ -221,7 +237,6 @@ footer #footer-outer-grid .social-media .form form input[type=email] {
   font-weight: 400;
   line-height: 15px;
   letter-spacing: 0em;
-  text-align: left;
 }
 footer #footer-outer-grid .social-media .form form input[type=email]:focus {
   outline: 0;
@@ -239,11 +254,9 @@ footer #footer-outer-grid .social-media .form form input[type=submit] {
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 0em;
-  text-align: left;
   color: #fff;
   position: relative;
   left: -10px;
-  top: 3px;
 }
 footer #footer-outer-grid .social-media .social-icons ul {
   display: flex;

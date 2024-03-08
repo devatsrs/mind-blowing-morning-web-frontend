@@ -3,6 +3,10 @@ footer {
   position: absolute;
   bottom: 0;
 
+  @media only screen and (max-width: 1324px) {
+    position: relative;
+  }
+
   #footer-copyright {
     margin: 0 auto;
     display: flex;
@@ -33,6 +37,13 @@ footer {
     width: 1326px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: 1324px) {
+      flex-direction: column;
+      width: auto;
+      padding: 30px;
+    }
+
     .column {
       flex-basis: 100%;
       min-height: 200px;
@@ -59,8 +70,8 @@ footer {
           font-weight: 700;
           line-height: 30px;
           letter-spacing: 0.20000000298023224px;
-          text-align: left;
-          width: 400px;
+          //   text-align: left;
+          width: 95%;
           color: #5c5c5c;
         }
       }
@@ -72,6 +83,10 @@ footer {
 
       display: flex;
       padding: 0px 0px 0px 0px;
+
+      @media only screen and (max-width: 550px) {
+        flex-direction: column;
+      }
 
       ul {
         list-style: none;
@@ -88,7 +103,7 @@ footer {
         font-weight: 700;
         line-height: 20px;
         letter-spacing: 0px;
-        text-align: left;
+        // text-align: left;
         margin: 0;
         margin-bottom: 10px;
         color: #3c3c3c;
@@ -100,7 +115,7 @@ footer {
         font-weight: 400;
         line-height: 25px;
         letter-spacing: 0px;
-        text-align: left;
+        // text-align: left;
         text-decoration: none;
         color: #3c3c3c;
         &:hover {
@@ -123,7 +138,7 @@ footer {
         font-weight: 700;
         line-height: 20px;
         letter-spacing: 0px;
-        text-align: left;
+        // text-align: left;
         margin: 0;
         margin-bottom: 10px;
         color: #3c3c3c;
@@ -134,6 +149,7 @@ footer {
         margin: 20px 0;
 
         form {
+          display: flex;
           input[type="email"] {
             width: 200px;
             border: 0;
@@ -150,7 +166,7 @@ footer {
             font-weight: 400;
             line-height: 15px;
             letter-spacing: 0em;
-            text-align: left;
+            // text-align: left;
 
             &:focus {
               outline: 0;
@@ -170,12 +186,11 @@ footer {
             font-weight: 700;
             line-height: 42px;
             letter-spacing: 0em;
-            text-align: left;
+            // text-align: left;
             color: #fff;
 
             position: relative;
             left: -10px;
-            top: 3px;
           }
         }
       }
