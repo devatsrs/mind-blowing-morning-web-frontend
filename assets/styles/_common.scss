@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 300 12px/1 $primart-font;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-out 0s;
+
+  color: $yelow;
+  &:hover {
+    color: $black;
+  }
+}
+
+h1 {
+  font: italic 700 40px/1 $primart-font;
+  span {
+    display: block;
+    font: 400 16px/30px $primart-font;
+  }
+}
+h2 {
+  font: italic 700 35px/1 $primart-font;
+  span {
+    display: block;
+    font: 400 16px/30px $primart-font;
+  }
+}
+p {
+  font: normal 300 14px/30px $primart-font;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cta {
+  position: relative;
+  display: table;
+  background-color: $yelow;
+  color: $white;
+  padding: 15px 30px;
+  border-radius: 0 0 15px 0;
+  margin: 40px 0;
+  font: 700 18px/1 $primart-font;
+
+  &:hover {
+    color: $white;
+    background-color: $yelow-dark;
+  }
+}
+
+.dotbefore {
+  &::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    background-color: $yelow;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}
+
+.dropshadow {
+  box-shadow: -11px 5px 20px 0px #ccc;
+}
+
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+// Scolling effects
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
